@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    position: relative;
+	}
+
+html {
+    background-color: hsl(180,0%,26%);
+	background-image:
+		linear-gradient(
+            hsla(150,0%,26%,0),
+			hsla(80,57%,56%,.5),
+			hsl(200,30%,26%) 500px
+			),
+		url('../images/bg_top.jpg');
+    background-size: cover;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    
+    padding: 60px 0;
+    
+    font-family: "Segoe UI", sans-serif;
+	}
+
+.main-header {
+	padding: 60px;
+    min-height: 400px;
+	}
+
+.logo {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: white;
+	}
+
+.main-content {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+.nav-box {
+    max-width: 300px;
+    flex-grow: 1;
+    
+    position: relative;
+    padding: 10px 10px 40px;
+    
+    color: white;
+    
+    background-image: 
+        linear-gradient(
+            hsla(3,10%,0%,0),
+            hsla(3,10%,0%,.4)
+            ),
+        url(../images/bg_top.jpg);
+    background-size: auto 200%;
+    background-position: 50%;
+    opacity: .8;
+    
+    transition: 5s background-size, .3s opacity;
+/*    box-shadow: inset 0 0 50px 10px hsl(33,0%,10%);*/
+    }
+.nav-box > * {
+    z-index: 2;
+    }
+.nav-box:hover {
+    background-size: auto 100%;
+    opacity: 1;
+    }
+.nav-box:before,
+.nav-box:after {    
+    content: '';
+    position: absolute;
+    }
+.nav-box:after {
+    top: 0; left: 0;
+    bottom: 0; right: 0;   
+    z-index: 1;
+    
+    background-image: 
+        linear-gradient(
+            45deg,
+            hsla(33,100%,33%,1),
+            hsla(103,100%,20%,1)
+            );
+    mix-blend-mode: color;
+    }
+
+.nav-box:before {
+    top: -5px; left: -5px;
+    right: -5px; bottom: -5px;
+    
+    border: 1px solid #999;
+    opacity: .4;
+    transition: .3s;
+    }
+.nav-box:hover:before {
+    opacity: 1;
+    }
+.nav-box:nth-child(2):after {
+    background-image: 
+        linear-gradient(
+            45deg,
+            hsla(133,100%,33%,1),
+            hsla(233,100%,20%,1)
+            );
+    }
+.nav-box:nth-child(3):after {
+    background-image: 
+        linear-gradient(
+            45deg,
+            hsla(233,100%,33%,1),
+            hsla(33,100%,20%,1)
+            );
+    }
+
+.nav-box_title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
