@@ -11,14 +11,14 @@ html {
 		linear-gradient(
             hsla(150,0%,26%,0),
 			hsla(80,57%,56%,.5),
-			hsl(200,30%,26%) 500px
+			hsla(200,30%,26%,1) 500px
 			),
 		url('../images/bg_top.jpg');
-    background-size: cover;
-    background-position: 0 100%;
+    background-size: auto, 100% auto;
+    background-position: 0 100%, 0 0;
     background-repeat: no-repeat;
     
-    padding: 60px 0;
+    padding: 60px 0 0;
     
     font-family: "Segoe UI", sans-serif;
 	}
@@ -26,18 +26,22 @@ html {
 .main-header {
 	padding: 60px;
     min-height: 400px;
+    text-align: center;
+    color: white;
 	}
 
 .logo {
 	margin: auto;
+    margin-bottom: 30px;
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
 	background-color: white;
 	}
 
-.main-content {
+.nav-content {
     margin: auto;
+    margin-bottom: 60px;
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -124,3 +128,78 @@ html {
     font-size: 2rem;
     margin-bottom: 20px;
     }
+
+.contact-tile {
+    background-color: white;
+    color: #666;
+    min-height: 500px;
+    padding: 30px;
+    }
+
+.contact-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    }
+
+.contact-box {
+    margin: auto;
+    width: 100%;
+    max-width: 1010px;   
+    }
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    }
+
+.label {
+    font-size: .9rem;
+    }
+
+input, 
+textarea {
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px;
+    color: inherit;
+    width: 100%;
+    max-width: 300px;
+    font-family: inherit;
+    }
+
+.quick-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+.quick-contact > * {
+    flex-grow: 1;
+    }
+
+.input-coll_fl-l {
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
