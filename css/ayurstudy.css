@@ -10,19 +10,18 @@
 /*    outline: 1px solid yellow;*/
 	}
 
-html {
-    height: 100%;
+body {
     background-color: hsl(180,0%,26%);
 	background-image:
 		linear-gradient(
             hsla(150,0%,26%,0),
-			hsla(80,57%,56%,.5),
-			hsla(200,30%,26%,1) 80%
+			hsla(150,57%,56%,.5),
+			hsla(200,30%,26%,1) 500px
 			),
 		url('../images/bg_top.jpg');
     background-size: auto, 100% auto;
     background-position: 0 100%, 0 0;
-    background-attachment: scroll, fixed;
+/*    background-attachment: scroll, fixed;*/
     background-repeat: no-repeat;
     
     font-family: 'Poppins', sans-serif;
@@ -34,15 +33,30 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 .main-header {
-    min-height: 500px;
+/*    min-height: 500px;*/
     color: white;
     
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
 	}
-
+.main-nav {
+    width: 100%;
+    }
+.main-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 60px 0;
+    }
+.main-nav li {
+    flex-basis: 150px;
+    }
 .logo {
-    width: calc(33.333% - 30px);
+/*    width: calc(33.333% - 30px);*/
+    width: calc(100% / 3);
     background-image:
         radial-gradient(
             circle,
@@ -52,21 +66,26 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 .intro-text {
+/*
     width: calc(33.333% - 60px);
     margin: auto 0 auto 60px;
-    padding: 10px;
+*/
+    width: calc(100% / 3 * 2);
+    padding: 0 30px;
     }
-
+.main-cap_strong {
+    font-size: 2rem;
+    }
 .main-cap + .main-cap {
     margin-top: 30px;
     }
 
 .nav-content {
-    margin: auto;
-    margin-bottom: 60px;
+/*    margin: auto;*/
     width: 100%;
-/*    max-width: 1000px;*/
-    padding: 30px;
+    
+    padding: 0 30px;
+    margin: 120px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,24 +105,59 @@ h1, h2, h3, h4, h5, h6 {
             hsla(3,10%,0%,.4)
             ),
         url(../images/bg_top.jpg);
-    background-size: auto 200%;
+    background-size: auto, 100% auto;
     background-position: 50%;
     opacity: .8;
     
     transition: 5s background-size, .3s opacity;
 /*    box-shadow: inset 0 0 50px 10px hsl(33,0%,10%);*/
     }
+.box_courses {    
+    background-image: 
+        linear-gradient(
+            hsla(3,10%,0%,.4),
+            hsla(3,10%,0%,.8)
+            ),
+        url(../images/bg_courses.jpg);
+    }
+.box_opportunities {    
+    background-image: 
+        linear-gradient(
+            hsla(3,10%,0%,.4),
+            hsla(3,10%,0%,.8)
+            ),
+        url(../images/bg_opportunities.jpg);
+    }
+.box_about {    
+    background-image: 
+        linear-gradient(
+            hsla(3,10%,0%,.4),
+            hsla(3,10%,0%,.8)
+            ),
+        url(../images/bg_about.jpg);
+    }
 .nav-box > * {
     z-index: 2;
     }
 .nav-box:hover {
-    background-size: auto 100%;
+    background-size: auto, 200% auto;
     opacity: 1;
     }
 .nav-box:before,
 .nav-box:after {    
     content: '';
     position: absolute;
+    }
+.nav-box:before {
+    top: -5px; left: -5px;
+    right: -5px; bottom: -5px;
+    
+    border: 1px solid #999;
+    opacity: .4;
+    transition: .3s;
+    }
+.nav-box:hover:before {
+    opacity: 1;
     }
 .nav-box:after {
     top: 0; left: 0;
@@ -120,18 +174,7 @@ h1, h2, h3, h4, h5, h6 {
             );
     mix-blend-mode: color;
     }
-.nav-box:before {
-    top: -5px; left: -5px;
-    right: -5px; bottom: -5px;
-    
-    border: 1px solid #999;
-    opacity: .4;
-    transition: .3s;
-    }
-.nav-box:hover:before {
-    opacity: 1;
-    }
-.nav-box:nth-child(2):after {
+.box_courses:after {
     background-image: 
         linear-gradient(
             45deg,
@@ -139,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
             hsl(233,100%,20%)
             );
     }
-.nav-box:nth-child(3):after {
+.box_opportunities:after {
     background-image: 
         linear-gradient(
             45deg,
@@ -188,6 +231,10 @@ textarea {
     color: inherit;
     width: 100%;
     font-family: inherit;
+    }
+
+input:focus, textarea:focus {
+    border: 1px solid black;
     }
 
 .quick-contact {
