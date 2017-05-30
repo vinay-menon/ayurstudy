@@ -16,16 +16,18 @@ body {
 		linear-gradient(
             hsla(150,0%,26%,0),
 			hsla(150,57%,56%,.5),
-			hsla(200,30%,26%,1) 500px
+			hsla(200,30%,26%,.8) 500px
 			),
 		url('../images/bg_top.jpg');
-    background-size: auto, 100% auto;
+    background-size: auto, cover;
     background-position: 0 100%, 0 0;
-/*    background-attachment: scroll, fixed;*/
+    background-attachment: scroll, fixed;
     background-repeat: no-repeat;
     
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
+    
+    color: #666;
 	}
 
 h1, h2, h3, h4, h5, h6 {    
@@ -196,6 +198,25 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
     }
 
+.break-text {
+    background-color: white;
+    background-image: 
+        linear-gradient(
+            hsla(153,40%,33%,.6),
+            hsla(203,40%,20%,.6)
+            ),
+        url(../images/bg_courses.jpg);
+    background-size: cover;
+    background-attachment: scroll, fixed;
+    color: white;
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    }
+
+
+
 .contact-tile {
     background-color: white;
     color: #666;
@@ -259,6 +280,15 @@ input:focus, textarea:focus {
     flex-grow: 1;
     }
 
+
+.main-footer {
+    min-height: 50vh;
+    background-image: 
+        linear-gradient(
+            hsla(0,0%,0%,.7),
+            hsla(0,0%,0%,.7)
+            );
+    }
 
 
 
