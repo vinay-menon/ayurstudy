@@ -1,5 +1,6 @@
- @import url('https://fonts.googleapis.com/css?family=Poppins:300');
- @import url('https://fonts.googleapis.com/css?family=Noto+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Vidaloka');
 
 * {
 	margin: 0;
@@ -59,13 +60,33 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
 /*    width: calc(33.333% - 30px);*/
     width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+/*    margin-top: -50px;*/
+/*
     background-image:
         radial-gradient(
             circle,
+            transparent 98px,
+            white 98px,
             white 100px,
             transparent 0
             );
+*/
+    
+    display: flex;
 	}
+.logo-img {
+    max-width: 40%;
+    margin: auto;
+    }
+.logo-title {
+    text-align: center;
+    font-size: 3rem;
+/*    font-weight: bold;*/
+    font-family: 'Vidaloka', serif;
+    }
 
 .intro-text {
 /*
@@ -74,6 +95,9 @@ h1, h2, h3, h4, h5, h6 {
 */
     width: calc(100% / 3 * 2);
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
 .main-cap_strong {
     font-size: 2rem;
@@ -95,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-box {
     max-width: calc(33.33% - 30px);
     flex-grow: 1;
-    
+    background-image: none!important;
     position: relative;
     padding: 10px;
     
@@ -166,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0; right: 0;   
     z-index: 1;
     
+    background-image: none!important;
     opacity: .4;
     
     background-image: 
@@ -199,16 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 .break-text {
-    background-color: white;
-    background-image: 
-        linear-gradient(
-            hsla(153,40%,33%,.6),
-            hsla(203,40%,20%,.6)
-            ),
-        url(../images/bg_courses.jpg);
-    background-size: cover;
-    background-attachment: scroll, fixed;
-    color: white;
+    background-color: hsla(0,0%,100%,.9);
     padding: 30px;
     height: 100vh;
     display: flex;
