@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:700');
 @import url('https://fonts.googleapis.com/css?family=Vidaloka');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i');
 
 * {
 	margin: 0;
@@ -8,7 +9,7 @@
 	box-sizing: border-box;
     position: relative;
     
-/*    outline: 1px solid red;*/
+   /* outline: 1px solid yellow; */
 	}
 
 body {
@@ -16,7 +17,7 @@ body {
 	background-image:
 		linear-gradient(
             hsla(150,0%,26%,0),
-			hsla(150,57%,56%,.5),
+			rgba(78, 206, 93, 0.245),
 			hsla(200,30%,26%,.8) 500px
 			),
 		url('../images/bg_top.jpg');
@@ -59,48 +60,52 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    /* margin-bottom: 32px; */
 	}
-.main-nav {
+.main-top-bar {
     width: 100%;
-    }
-.main-nav ul {
+    background-color: rgba(46, 72, 86, 0.531);
+    margin-bottom: 64px;
+    
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-end;
-    padding: 60px 0;
+    padding: 32px;
     }
-.main-nav li {
-    flex-basis: 150px;
+.main-nav {
+    display: flex;
+    margin-left: auto;
+    }
+.main-nav a {
+    width: 150px;
     text-align: center;
-/*    font-size: 1.2rem;*/
+    }
+.quick-contact {
+    padding: 5px 10px;
+    
+    border-radius: 5px;
+    background-color: rgba(93, 162, 199, 0.531);
+    }
+.quick-contact p + p {
+    border-left: 1px solid white;
+    margin-left: 12px;
+    padding-left: 12px;
+    }
+
+.secondary-page .main-header {
+    flex-wrap: nowrap;
+    }
+.secondary-page .main-nav {
+/*    width: auto;*/
+    order: 2;
     }
 
 .logo {
-/*    width: calc(33.333% - 30px);*/
-    width: calc(100% / 3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-/*    margin-top: -50px;*/
-/*
-    background-image:
-        radial-gradient(
-            circle,
-            transparent 98px,
-            white 98px,
-            white 100px,
-            transparent 0
-            );
-*/
-    
-    display: flex;
+    padding: 0 32px;
+    width: 364px;
 	}
 .logo-img {
-    max-width: 40%;
-    margin: auto;
-/*    filter: hue-rotate(145deg) saturate(5) invert(1);*/
+    width: 100%;
+    max-width: 100%;
+    border-radius: 30px;
     }
 .logo-title {
     text-align: center;
@@ -109,19 +114,26 @@ a:hover {
     font-family: 'Vidaloka', serif;
     }
 
+.secondary-page .logo {
+    width: 200px;
+    flex-direction: row;
+    order: 1;
+    }
+.secondary-page .logo-title {
+    font-size: 1rem;
+    }
+
 .intro-text {
-/*
-    width: calc(33.333% - 60px);
-    margin: auto 0 auto 60px;
-*/
-    width: calc(100% / 3 * 2);
+    width: calc(100% - 364px);
     padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     }
 .main-cap_strong {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+/*    text-transform: uppercase;*/
     }
 .main-cap + .main-cap {
     margin-top: 30px;
@@ -140,6 +152,7 @@ a:hover {
 .nav-box {
     max-width: calc(33.33% - 30px);
     flex-grow: 1;
+    display: flex;
     background-image: none!important;
     position: relative;
     padding: 10px;
@@ -156,9 +169,17 @@ a:hover {
     background-position: 50%;
     opacity: .8;
     
-    transition: 5s background-size, .3s opacity;
+    transition: 5s background-size linear, .3s opacity;
 /*    box-shadow: inset 0 0 50px 10px hsl(33,0%,10%);*/
     }
+.nav-box_title {
+    margin-bottom: 12px;
+    }
+
+.nav-box-icon {
+    margin-right: 24px;
+    }
+
 .box_courses {    
     background-image: 
         linear-gradient(
@@ -187,7 +208,7 @@ a:hover {
     z-index: 2;
     }
 .nav-box:hover {
-    background-size: auto, 200% auto;
+    background-size: auto, 110% auto;
     opacity: 1;
     }
 .nav-box:before,
