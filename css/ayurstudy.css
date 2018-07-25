@@ -18,12 +18,12 @@ body {
 		linear-gradient(
             hsla(150,0%,26%,0),
 			rgba(78, 206, 93, 0.245),
-			hsla(200,30%,26%,.8) 500px
+			hsla(200,30%,26%,.8),
+			hsla(200,30%,26%,1) 700px
 			),
 		url('../images/bg_top.jpg');
-    background-size: auto, cover;
+    background-size: auto, contain;
     background-position: 0 100%, 0 0;
-    background-attachment: scroll, fixed;
     background-repeat: no-repeat;
     
     font-family: 'Poppins', sans-serif;
@@ -105,7 +105,8 @@ a:hover {
 .logo-img {
     width: 100%;
     max-width: 100%;
-    border-radius: 30px;
+    border-radius: 50%;
+    /* filter: invert(1); */
     }
 .logo-title {
     text-align: center;
