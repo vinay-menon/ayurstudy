@@ -470,6 +470,7 @@ a:hover {
   padding: 10px;
   color: white;
   border: 1px solid #999;
+  border-radius: 5px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4))), url(../images/bg_top.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../images/bg_top.jpg);
   background-size: auto, 100% auto;
@@ -574,7 +575,11 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
   margin-left: auto;
-  margin-bottom: 120px;
+  margin-bottom: 32px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(46, 73, 86, 0.8))), url(../images/slides/slide-02.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(46, 73, 86, 0.8)), url(../images/slides/slide-02.jpg);
+  color: white;
+  min-height: 400px;
 }
 
 .info-box:nth-child(2) {
@@ -703,7 +708,6 @@ input:focus, textarea:focus {
 }
 
 .main-footer {
-  min-height: 50vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }

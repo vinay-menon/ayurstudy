@@ -182,6 +182,7 @@ a:hover {
     
     color: white;
     border: 1px solid #999;
+    border-radius: 5px;
     
     background-image: 
         linear-gradient(
@@ -300,7 +301,17 @@ a:hover {
     background-color: hsla(0,0%,100%,.9);
     padding: 30px;
     margin-left: auto;
-    margin-bottom: 120px;
+    margin-bottom: 32px;
+    background-image: 
+		linear-gradient(
+            rgba(66, 66, 66, 0.456),
+			rgba(78, 206, 93, 0.245),
+			hsla(200,30%,26%,.8)
+			),
+        url(../images/slides/slide-02.jpg);
+    color: white;
+
+    min-height: 400px;
     }
 .info-box:nth-child(2) {
     margin-left: 0;
@@ -406,7 +417,7 @@ input:focus, textarea:focus {
 
 
 .main-footer {
-    min-height: 50vh;
+    // min-height: 50vh;
     background-image: 
         linear-gradient(
             hsla(0,0%,0%,.7),
