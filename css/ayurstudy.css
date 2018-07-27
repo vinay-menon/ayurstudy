@@ -14,7 +14,6 @@
 body {
   background-color: #424242;
   background-image: linear-gradient(rgba(66, 66, 66, 0), rgba(78, 206, 93, 0.245), rgba(46, 73, 86, 0.8) 600px, #2e4956 700px);
-  background-color: red;
   background-size: auto;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -22,6 +21,7 @@ body {
   line-height: 1.4;
   color: #666;
   position: relative;
+  overflow-x: hidden;
 }
 
 .bg-image-slideshow, .bg-image-slideshow_slide {
@@ -576,10 +576,24 @@ a:hover {
   padding: 30px;
   margin-left: auto;
   margin-bottom: 32px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(46, 73, 86, 0.8))), url(../images/slides/slide-02.jpg);
-  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(46, 73, 86, 0.8)), url(../images/slides/slide-02.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(46, 73, 86, 0.8))), url(../images/slides/slide-01.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(46, 73, 86, 0.8)), url(../images/slides/slide-01.jpg);
   color: white;
   min-height: 400px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.info-box:nth-child(2) {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.slide-in {
+  -webkit-transform: none !important;
+          transform: none !important;
 }
 
 .info-box:nth-child(2) {
