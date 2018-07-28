@@ -334,6 +334,12 @@ a:hover {
   margin-bottom: 128px;
 }
 
+@media (max-width: 1164px) {
+  .main-header {
+    margin-bottom: 64px;
+  }
+}
+
 .main-top-bar {
   width: 100%;
   background-color: rgba(46, 72, 86, 0.531);
