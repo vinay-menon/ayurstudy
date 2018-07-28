@@ -410,6 +410,10 @@ a:hover {
         .info-box {
             max-width: 100%;
             transform: none;
+
+            &:nth-child(2) {
+                transform: none;
+                }
             }
         }
 

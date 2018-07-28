@@ -701,6 +701,10 @@ a:hover {
     -webkit-transform: none;
             transform: none;
   }
+  .info-box:nth-child(2) {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .slide-in {
