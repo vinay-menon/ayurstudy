@@ -21,7 +21,6 @@ body {
   line-height: 1.4;
   color: #666;
   position: relative;
-  overflow-x: hidden;
 }
 
 .bg-image-slideshow, .bg-image-slideshow_slide {
@@ -672,6 +671,7 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   /*    margin-bottom: 90px;*/
+  overflow-x: hidden;
 }
 
 .info-box {
@@ -698,6 +698,8 @@ a:hover {
 @media (max-width: 712px) {
   .info-box {
     max-width: 100%;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
