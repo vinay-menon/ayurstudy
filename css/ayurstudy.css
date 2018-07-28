@@ -686,8 +686,9 @@ a:hover {
   padding: 30px;
   margin-left: auto;
   margin-bottom: 32px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(46, 73, 86, 0.8))), url(../images/slides/slide-01.jpg);
-  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(46, 73, 86, 0.8)), url(../images/slides/slide-01.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(20, 118, 171, 0.8))), url(../images/yoga1.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(20, 118, 171, 0.8)), url(../images/yoga1.jpg);
+  background-size: cover;
   color: white;
   min-height: 400px;
   -webkit-transition: .5s;
@@ -715,6 +716,13 @@ a:hover {
 .info-box:nth-child(2) {
   margin-left: 0;
   margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(20, 118, 171, 0.8))), url(../images/_87b7d52a-4235-11e8-873d-4d6fb1883171.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(20, 118, 171, 0.8)), url(../images/_87b7d52a-4235-11e8-873d-4d6fb1883171.jpg);
+}
+
+.info-box:nth-child(3) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(20, 118, 171, 0.8))), url(../images/ayurveda3.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(20, 118, 171, 0.8)), url(../images/ayurveda3.jpg);
 }
 
 .info-text {
@@ -872,8 +880,7 @@ input:focus, textarea:focus {
 }
 
 .main-footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-color: #222;
   padding: 50px 0;
   text-align: center;
 }
