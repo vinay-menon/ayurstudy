@@ -857,7 +857,10 @@ input:focus, textarea:focus {
 
 .contact-nav-item {
   padding: 15px;
-  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#345462), to(#105e89));
+  background-image: linear-gradient(#345462, #105e89);
+  background-size: contain;
+  color: white;
   border-radius: 10px;
   font-weight: bold;
   font-family: 'Noto Sans', sans-serif;

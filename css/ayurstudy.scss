@@ -580,7 +580,13 @@ input:focus, textarea:focus {
 
 .contact-nav-item {
     padding: 15px;
-    background-color: white;
+    background-image: 
+		linear-gradient(
+            rgb(52, 84, 98),
+			rgb(16, 94, 137)
+			);
+    background-size: contain;
+    color: white;
     border-radius: 10px;
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
