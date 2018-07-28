@@ -408,7 +408,7 @@ a:hover {
 			rgba(78, 206, 93, 0.245),
 			rgba(20, 118, 171, 0.8)
 			),
-        url(../images/yoga1.jpg);
+        url(../images/ayurveda3.jpg);
     background-size: cover;
     color: white;
 
@@ -453,7 +453,7 @@ a:hover {
 			rgba(78, 206, 93, 0.245),
 			rgba(20, 118, 171, 0.8)
 			),
-        url(../images/ayurveda3.jpg);
+        url(../images/aky-hero_1.jpg);
     }
 .info-text {
     max-width: calc(50% - 30px);
@@ -568,7 +568,7 @@ input:focus, textarea:focus {
 			rgba(78, 206, 93, 0.245),
 			hsla(200,30%,26%,.8)
 			),
-        url(../images/slides/slide-04.jpg);
+        url(../images/johny-goerend-704781-unsplash.jpg);
     background-size: cover;
     }
     @media (max-width: 558px) {
@@ -582,8 +582,8 @@ input:focus, textarea:focus {
     padding: 15px;
     background-image: 
 		linear-gradient(
-            rgb(52, 84, 98),
-			rgb(16, 94, 137)
+            rgb(72, 74, 67),
+			rgb(83, 71, 65)
 			);
     background-size: contain;
     color: white;
@@ -593,7 +593,11 @@ input:focus, textarea:focus {
     font-size: 1.3rem;
 
     &:hover {
-        background-color: rgb(209, 209, 209);
+        background-image: 
+            linear-gradient(
+                rgb(45, 67, 86),
+                rgb(83, 71, 65)
+                );
         }
 
     + .contact-nav-item {

@@ -686,8 +686,8 @@ a:hover {
   padding: 30px;
   margin-left: auto;
   margin-bottom: 32px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(20, 118, 171, 0.8))), url(../images/yoga1.jpg);
-  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(20, 118, 171, 0.8)), url(../images/yoga1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(20, 118, 171, 0.8))), url(../images/ayurveda3.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(20, 118, 171, 0.8)), url(../images/ayurveda3.jpg);
   background-size: cover;
   color: white;
   min-height: 400px;
@@ -721,8 +721,8 @@ a:hover {
 }
 
 .info-box:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(20, 118, 171, 0.8))), url(../images/ayurveda3.jpg);
-  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(20, 118, 171, 0.8)), url(../images/ayurveda3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(20, 118, 171, 0.8))), url(../images/aky-hero_1.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(20, 118, 171, 0.8)), url(../images/aky-hero_1.jpg);
 }
 
 .info-text {
@@ -840,8 +840,8 @@ input:focus, textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(46, 73, 86, 0.8))), url(../images/slides/slide-04.jpg);
-  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(46, 73, 86, 0.8)), url(../images/slides/slide-04.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.456)), color-stop(rgba(78, 206, 93, 0.245)), to(rgba(46, 73, 86, 0.8))), url(../images/johny-goerend-704781-unsplash.jpg);
+  background-image: linear-gradient(rgba(66, 66, 66, 0.456), rgba(78, 206, 93, 0.245), rgba(46, 73, 86, 0.8)), url(../images/johny-goerend-704781-unsplash.jpg);
   background-size: cover;
 }
 
@@ -857,8 +857,8 @@ input:focus, textarea:focus {
 
 .contact-nav-item {
   padding: 15px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#345462), to(#105e89));
-  background-image: linear-gradient(#345462, #105e89);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#484a43), to(#534741));
+  background-image: linear-gradient(#484a43, #534741);
   background-size: contain;
   color: white;
   border-radius: 10px;
@@ -868,7 +868,8 @@ input:focus, textarea:focus {
 }
 
 .contact-nav-item:hover {
-  background-color: #d1d1d1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d4356), to(#534741));
+  background-image: linear-gradient(#2d4356, #534741);
 }
 
 .contact-nav-item + .contact-nav-item {
