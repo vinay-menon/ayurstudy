@@ -541,6 +541,11 @@ input:focus, textarea:focus {
         url(../images/slides/slide-04.jpg);
     background-size: cover;
     }
+    @media (max-width: 558px) {
+        .contact-nav {
+            flex-direction: column;
+            }
+        }
 
 .contact-nav-item {
     padding: 15px;
@@ -558,6 +563,12 @@ input:focus, textarea:focus {
         margin-left: 10%;
         }
     }
+    @media (max-width: 558px) {
+        .contact-nav-item + .contact-nav-item {
+            margin-left: 0;
+            margin-top: 10%;
+            }
+        }
 
 
 .main-footer {

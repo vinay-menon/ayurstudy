@@ -831,6 +831,15 @@ input:focus, textarea:focus {
   background-size: cover;
 }
 
+@media (max-width: 558px) {
+  .contact-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact-nav-item {
   padding: 15px;
   background-color: white;
@@ -846,6 +855,13 @@ input:focus, textarea:focus {
 
 .contact-nav-item + .contact-nav-item {
   margin-left: 10%;
+}
+
+@media (max-width: 558px) {
+  .contact-nav-item + .contact-nav-item {
+    margin-left: 0;
+    margin-top: 10%;
+  }
 }
 
 .main-footer {
