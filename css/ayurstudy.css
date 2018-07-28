@@ -698,12 +698,6 @@ a:hover {
 @media (max-width: 712px) {
   .info-box {
     max-width: 100%;
-    -webkit-transform: none;
-            transform: none;
-  }
-  .info-box:nth-child(2) {
-    -webkit-transform: none;
-            transform: none;
   }
 }
 
