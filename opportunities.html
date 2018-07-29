@@ -2,99 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AyurStudy</title>
     <link rel="stylesheet" href="css/ayurstudy.css">
 </head>
 <body class="secondary-page">
-    <section class="main-header">
-        <nav class="main-nav">
-            <ul>
-                <li>
-                    <a href="">Courses</a>
-                </li>
-                <li>
-                    <a href="">Opportunities</a>
-                </li>
-                <li>
-                    <a href="">Location</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="main-header --opportunities">
+        <div class="main-top-bar">
+            <div class="quick-contact">
+                <div>enquiries: </div>
+                <p>+91 96567 84892</p>
+                <p>+91 96567 84892</p>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="opportunities.html">Opportunities</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact</a>
+            </nav>
+        </div>
         
         <div class="logo">
             <img src="images/logo_high.png" class="logo-img" alt="">
-            <p class="logo-title">Ayur Study</p>
+            <!-- <p class="logo-title">Ayur Study</p> -->
         </div>
+
+        <div class="page-heading">
+            <h1>Opportunities</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, officia aspernatur inventore voluptatem animi libero dolorem delectus dignissimos architecto facere repudiandae? Molestias ex obcaecati sunt adipisci, ipsum expedita veniam assumenda.
+            </p>
+        </div>
+    </header>
+     
+
+    <section class="contact-nav">
+        <a href="#" class="contact-nav-item">Enquiries</a>
+        <a href="#" class="contact-nav-item">Visit Us</a>
+        <a href="#" class="contact-nav-item">Join a Course</a>
     </section>
     
-    <section class="nav-content">
-        <div class="nav-box box_courses">
-            <h2 class="nav-box_title">
-                Courses Offered
-            </h2>            
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed vitae magnam, repudiandae voluptatibus eos iure aperiam. Totam nulla ullam suscipit recusandae, eum assumenda, minus doloribus ex enim, velit explicabo.
-            </p>
-        </div>
-        
-        <div class="nav-box box_opportunities">
-            <h2 class="nav-box_title">
-                Opportunities
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed vitae magnam, repudiandae voluptatibus eos iure aperiam. Totam nulla ullam suscipit recusandae, eum assumenda, minus doloribus ex enim, velit explicabo.
-            </p>
-        </div>
-        
-        <div class="nav-box box_about">
-            <h2 class="nav-box_title">
-                About Us
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sed vitae magnam, repudiandae voluptatibus eos iure aperiam. Totam nulla ullam suscipit recusandae, eum assumenda, minus doloribus ex enim, velit explicabo.
-            </p>
-        </div>
-    </section>
-    
-    <section class="break-text">
-        <div class="info-box">
-            <div class="info-text">
-                <h2 class="box_title">
-                    Placement 
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum iste nostrum tenetur deleniti, rem explicabo minus, cum. Nemo, repellat, facere? Consequuntur placeat repellendus similique amet corporis cumque tempore non eaque.
-                </p>
-            </div>
-        </div>
-        
-        <div class="info-box">
-            <div class="info-text">
-                <h2 class="box_title">
-                    Equipment 
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum iste nostrum tenetur deleniti, rem explicabo minus, cum. Nemo, repellat, facere? Consequuntur placeat repellendus similique amet corporis cumque tempore non eaque.
-                </p>
-            </div>
-        </div>
-        
-        <div class="info-box">
-            <div class="info-text">
-                <h2 class="box_title">
-                    Staff 
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum iste nostrum tenetur deleniti, rem explicabo minus, cum. Nemo, repellat, facere? Consequuntur placeat repellendus similique amet corporis cumque tempore non eaque.
-                </p>
-            </div>
-        </div>
-    </section>    
-    
-    <section class="location-tile">     
+    <!-- <section class="location-tile">     
        <div class="location-box">
             <h2 class="box_title">
                 Location 
@@ -133,11 +83,18 @@
                 </label>
             </form>
         </div>
-    </section>
+    </section> -->
     
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+
+        <div class="copyright-msg">
+            &copy; 2018 Ayur Study
+        </div>
+
+    </footer>
     
     <script src="js/jq.js"></script>
+    <script src="js/main.js"></script>
     <script>
         $("body").on("keydown", function(e){
             if(e.keyCode == 65) {
@@ -153,4 +110,4 @@
         })
     </script>
 </body>
-</html>
+</html> 
