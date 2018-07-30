@@ -1213,6 +1213,7 @@ button[type=submit] {
   font-weight: bold;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 .contact-nav-item:hover {
