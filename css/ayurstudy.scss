@@ -64,7 +64,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {    
     font-family: 'Noto Sans', sans-serif;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     }
 
 a {
@@ -853,6 +853,14 @@ li {
 .contact-box {
     margin: auto;
     max-width: 1010px;   
+    }
+
+form p {
+    margin-bottom: 12px;
+
+    &:last-of-type {
+        margin-bottom: 24px;
+        }
     }
 
 label {
