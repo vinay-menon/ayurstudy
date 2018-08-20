@@ -965,11 +965,9 @@ li {
   border: 1px solid rgba(209, 217, 255, 0.81);
 }
 
-.course-item h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 1.4rem;
-  margin-bottom: 12px;
+.course-item.course-item-expanded {
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 1006px) {
@@ -987,8 +985,21 @@ li {
   }
 }
 
+.course-item-content h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.course-item-content > p {
+  max-width: 800px;
+  line-height: 1.7;
+}
+
 .course-thumb {
   min-width: 240px;
+  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
