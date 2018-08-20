@@ -40,8 +40,8 @@ body {
 		linear-gradient(
             hsla(150,0%,26%,0),
 			rgba(78, 206, 93, 0.245),
-			hsla(200,30%,26%,.8) 600px,
-			hsla(200,30%,26%,1) 700px
+			hsla(200,30%,26%,.8) 90%,
+			hsla(200,30%,26%,1) 100%
 			);
 	// background-image:
 	// 	linear-gradient(
@@ -272,6 +272,7 @@ li {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
 /*    text-transform: uppercase;*/
+    margin-bottom: 30px;
     }
     @media (max-width: 878px) {
         .main-cap_strong {
@@ -283,8 +284,9 @@ li {
             font-size: 2rem;
             }
         }
-.main-cap + .main-cap {
-    margin-top: 30px;
+    
+.main-cap {
+    line-height: 1.7;
     }
 
 .page-heading {
@@ -435,34 +437,46 @@ li {
     margin-bottom: 12px;
     }
 
-.nav-box-icon {
-    margin-right: 24px;
+.nav-box-content p {
+    font-size: .9rem;
+    line-height: 1.5;
     }
 
-.box_courses {    
-    background-image: 
-        linear-gradient(
-            hsla(3,10%,0%,.4),
-            hsla(3,10%,0%,.8)
-            ),
-        url(../images/bg_courses.jpg);
+.nav-box-icon {
+    margin-right: 24px;
+    min-width: 64px;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        }
     }
-.box_opportunities {    
-    background-image: 
-        linear-gradient(
-            hsla(3,10%,0%,.4),
-            hsla(3,10%,0%,.8)
-            ),
-        url(../images/bg_opportunities.jpg);
-    }
-.box_about {    
-    background-image: 
-        linear-gradient(
-            hsla(3,10%,0%,.4),
-            hsla(3,10%,0%,.8)
-            ),
-        url(../images/bg_about.jpg);
-    }
+
+// .box_courses {    
+//     background-image: 
+//         linear-gradient(
+//             hsla(3,10%,0%,.4),
+//             hsla(3,10%,0%,.8)
+//             ),
+//         url(../images/bg_courses.jpg);
+//     }
+// .box_opportunities {    
+//     background-image: 
+//         linear-gradient(
+//             hsla(3,10%,0%,.4),
+//             hsla(3,10%,0%,.8)
+//             ),
+//         url(../images/bg_opportunities.jpg);
+//     }
+// .box_about {    
+//     background-image: 
+//         linear-gradient(
+//             hsla(3,10%,0%,.4),
+//             hsla(3,10%,0%,.8)
+//             ),
+//         url(../images/bg_about.jpg);
+//     }
 .nav-box > * {
     z-index: 2;
     }
