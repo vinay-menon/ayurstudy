@@ -20,6 +20,7 @@ body {
   line-height: 1.4;
   color: #666;
   position: relative;
+  overflow-x: hidden;
 }
 
 .bg-image-slideshow, .bg-image-slideshow_slide {
@@ -410,7 +411,6 @@ li {
     right: 0;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
