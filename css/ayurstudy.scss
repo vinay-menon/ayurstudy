@@ -172,6 +172,9 @@ li {
         }
     body.mob-menu .main-nav {
         transform: translateX(0);
+        border-radius: 5px;
+        border: 3px solid white;
+        box-shadow: inset 0 0 0 1px rgba(34, 34, 34, 0.347);
         }
     }
 
@@ -1051,6 +1054,12 @@ button[type=submit] {
     position: sticky;
     top: 0;
     }   
+
+.about-map {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    }
 
 .main-footer {
     // min-height: 50vh;
