@@ -1255,8 +1255,8 @@ button[type=submit] {
 
 .contact-nav-item {
   padding: 15px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#484a43), to(#534741));
-  background-image: linear-gradient(#484a43, #534741);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1fb6df), to(#4075dd));
+  background-image: linear-gradient(#1fb6df, #4075dd);
   background-size: contain;
   color: white;
   border-radius: 10px;
