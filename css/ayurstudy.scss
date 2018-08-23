@@ -167,6 +167,7 @@ li {
 .main-nav {
     display: flex;
     margin-left: auto;
+    align-self: center;
     }
 .main-nav a {
     width: 150px;
@@ -181,6 +182,7 @@ li {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     transition: .3s;
+    padding-bottom: 8px;
     
     &:hover {
         background-size: 100% 100%;
@@ -204,8 +206,8 @@ li {
         border: 3px solid white;
         box-shadow: inset 0 0 0 1px rgba(34, 34, 34, 0.347);
 
-        a {
-            margin-bottom: 24px;
+        a + a {
+            margin-top: 24px;
             }
         }
     body.mob-menu .main-nav {
@@ -278,16 +280,23 @@ body.menu-bot-pos .main-nav-trigger {
     }
 
 .quick-contact {
-    padding: 5px 10px;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     
     border-radius: 5px;
     background-color: rgba(93, 162, 199, 0.531);
 
-    > div {
-        margin-right: 12px;
+    > * {
+        padding: 5px 10px;
         }
+    }
+.quick-contact-title {
+    width: 100%;
+    font-size: .68rem;
+    letter-spacing: 2px;
+    background-color: #fff;
+    color: #222;
     }
     @media (max-width: 516px) {
         .quick-contact {
@@ -303,10 +312,6 @@ body.menu-bot-pos .main-nav-trigger {
         .quick-contact {
             // flex-direction: column;
             width: 100%;
-
-            > div {
-                width: 100%;
-                }
             }
         }
         
@@ -1098,7 +1103,7 @@ button[type=submit] {
     @media (max-width: 558px) {
         .contact-nav-item + .contact-nav-item {
             margin-left: 0;
-            margin-top: 10%;
+            margin-top: 24px;
             }
         }
 

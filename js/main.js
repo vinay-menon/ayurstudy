@@ -31,7 +31,7 @@ $(".main-nav").on("click", function(e) {
 $(document).on("click", function(event){
         if (!$(event.target).hasClass('.main-nav')) {
             $("body").removeClass("mob-menu");
-            console.log("blkah"); 
+            $(".main-nav-trigger").html("menu").addClass("ico-menu").removeClass("ico-close");
         }
     });
   
