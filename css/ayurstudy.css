@@ -431,7 +431,6 @@ li {
     margin-bottom: 24px;
   }
   body.mob-menu .main-nav {
-    background-color: red;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
