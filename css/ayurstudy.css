@@ -545,6 +545,13 @@ body.menu-bot-pos .main-nav-trigger {
   bottom: 12px;
   right: 12px;
   z-index: 99999;
+  color: #ebebeb;
+  background-color: rgba(25, 184, 25, 0.905);
+}
+
+body.menu-bot-pos .main-nav-trigger:before {
+  -webkit-filter: saturate(0) brightness(100);
+          filter: saturate(0) brightness(100);
 }
 
 @media (max-width: 1200px) {
