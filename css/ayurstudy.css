@@ -477,7 +477,7 @@ li {
 @media (max-width: 1200px) {
   .main-nav-trigger {
     display: block;
-    margin-left: auto;
+    margin: auto 0 auto auto;
   }
 }
 
@@ -496,17 +496,9 @@ li {
   margin-right: 12px;
 }
 
-@media (max-width: 448px) {
+@media (max-width: 516px) {
   .quick-contact {
-    width: 100%;
-  }
-  .quick-contact > div {
-    width: 100%;
-  }
-}
-
-@media (max-width: 364px) {
-  .quick-contact {
+    margin-right: 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -517,13 +509,22 @@ li {
   }
 }
 
+@media (max-width: 448px) {
+  .quick-contact {
+    width: 100%;
+  }
+  .quick-contact > div {
+    width: 100%;
+  }
+}
+
 .quick-contact p + p {
   border-left: 1px solid white;
   margin-left: 12px;
   padding-left: 12px;
 }
 
-@media (max-width: 364px) {
+@media (max-width: 516px) {
   .quick-contact p + p {
     border-left: 0;
     margin-left: 0;
