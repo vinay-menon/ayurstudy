@@ -176,6 +176,7 @@ li {
     body.mob-menu .main-nav {
         animation: fade-in-right .3s forwards;
         opacity: 1;
+        pointer-events: auto;
         }
     }
 
@@ -187,7 +188,6 @@ li {
     to {
         transform: none;
         opacity: 1;
-        background-color: red;
         }
     }
 
