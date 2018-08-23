@@ -160,6 +160,7 @@ li {
         top: 100%;
         right: 0;
         transform: translateX(100%);
+        opacity: 0;
         transition: .3s;
         // height: auto;
         flex-direction: column;
@@ -177,6 +178,7 @@ li {
         }
     body.mob-menu .main-nav {
         transform: translateX(0);
+        opacity: 1;
         }
     }
 

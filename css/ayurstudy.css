@@ -412,6 +412,7 @@ li {
     right: 0;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    opacity: 0;
     -webkit-transition: .3s;
     transition: .3s;
     -webkit-box-orient: vertical;
@@ -433,6 +434,7 @@ li {
   body.mob-menu .main-nav {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    opacity: 1;
   }
 }
 
