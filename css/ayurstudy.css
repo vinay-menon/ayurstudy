@@ -415,17 +415,19 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transition: .2s;
-    transition: .2s;
     padding: 24px;
     background-color: #fff;
     color: rgba(58, 133, 58, 0.905);
     z-index: 9999;
+    display: none;
   }
   .main-nav a {
     margin-bottom: 24px;
   }
   body.mob-menu .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     border-radius: 5px;
