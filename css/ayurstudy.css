@@ -1155,6 +1155,12 @@ body.menu-bot-pos .main-nav-trigger:before {
   line-height: 1.7;
 }
 
+@media (max-width: 642px) {
+  .course-item-content h3 {
+    font-size: 2rem;
+  }
+}
+
 .course-thumb {
   min-width: 240px;
   max-width: 400px;
@@ -1178,10 +1184,7 @@ body.menu-bot-pos .main-nav-trigger:before {
   .course-thumb {
     min-width: 100%;
     margin-right: 0;
-    margin-top: 24px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    margin-bottom: 24px;
   }
 }
 
