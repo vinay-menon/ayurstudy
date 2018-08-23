@@ -903,6 +903,10 @@ body.menu-bot-pos .main-nav-trigger {
     flex-direction: column;
     margin-right: 24px;
 
+    .btn-link {
+
+        }
+
     img {
         width: 100%;
         max-width: 100%;
@@ -915,6 +919,10 @@ body.menu-bot-pos .main-nav-trigger {
             margin-right: 0;
             margin-bottom: 24px;
             // order: 2;
+
+            .btn-link {
+                display: none;
+                }
             }
         }
 
@@ -941,14 +949,23 @@ body.menu-bot-pos .main-nav-trigger {
         }
 
     .btn-link {
-        background-color: white;
-        color: inherit;
-        border: 1px solid rgba(209, 217, 255, 0.81);
-        align-self: flex-end;
+        // background-color: white;
+        // color: inherit;
+        // border: 1px solid rgba(209, 217, 255, 0.81);
+        // align-self: flex-end;
         margin-top: auto;
         padding: 5px 10px;
+        display: none;
         }
     }
+    @media (max-width: 570px) {
+        .course-item-content .btn-link {
+            display: block;
+            }
+        .syllabus-list {
+            margin-bottom: 12px;
+            }
+        }
 
 .course-list {
     list-style: none;

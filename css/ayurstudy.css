@@ -1186,6 +1186,9 @@ body.menu-bot-pos .main-nav-trigger:before {
     margin-right: 0;
     margin-bottom: 24px;
   }
+  .course-thumb .btn-link, .course-thumb button[type=submit] {
+    display: none;
+  }
 }
 
 .btn-link, button[type=submit] {
@@ -1217,13 +1220,18 @@ body.menu-bot-pos .main-nav-trigger:before {
 }
 
 .course-item-content .btn-link, .course-item-content button[type=submit] {
-  background-color: white;
-  color: inherit;
-  border: 1px solid rgba(209, 217, 255, 0.81);
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   margin-top: auto;
   padding: 5px 10px;
+  display: none;
+}
+
+@media (max-width: 570px) {
+  .course-item-content .btn-link, .course-item-content button[type=submit] {
+    display: block;
+  }
+  .syllabus-list {
+    margin-bottom: 12px;
+  }
 }
 
 .course-list {
