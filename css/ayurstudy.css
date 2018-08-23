@@ -571,6 +571,7 @@ body.menu-bot-pos .main-nav-trigger:before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow: hidden;
+  font-size: .9rem;
   border-radius: 5px;
   background-color: rgba(93, 162, 199, 0.531);
 }
