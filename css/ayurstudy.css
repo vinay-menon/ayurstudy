@@ -23,10 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-body.mob-menu {
-  overflow: hidden;
-}
-
 .bg-image-slideshow, .bg-image-slideshow_slide {
   position: absolute;
   top: 0;
