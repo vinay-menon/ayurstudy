@@ -446,6 +446,7 @@ li {
     -webkit-transform: none;
             transform: none;
     opacity: 1;
+    background-color: red;
   }
 }
 
@@ -459,6 +460,7 @@ li {
     -webkit-transform: none;
             transform: none;
     opacity: 1;
+    background-color: red;
   }
 }
 
