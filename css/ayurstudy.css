@@ -320,6 +320,47 @@ li {
   margin-bottom: 12px;
 }
 
+[class*="ico-"] {
+  position: relative;
+  padding-left: 32px !important;
+}
+
+[class*="ico-"]:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 32px;
+  height: 100%;
+  background-size: 16px auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.ico-call:before {
+  background-image: url(../images/icons/ico-call.png);
+}
+
+.ico-msg:before {
+  background-image: url(../images/icons/ico-msg.png);
+}
+
+.ico-menu:before {
+  background-image: url(../images/icons/ico-menu.png);
+}
+
+.ico-close:before {
+  background-image: url(../images/icons/ico-close.png);
+}
+
+.ico-fwd:after {
+  background-image: url(../images/icons/ico-fwd.png);
+  left: auto;
+  right: 0;
+  opacity: .8;
+}
+
 .main-header {
   color: white;
   display: -webkit-box;
@@ -407,7 +448,7 @@ li {
 @media (max-width: 1200px) {
   .main-nav {
     position: absolute;
-    top: 100%;
+    top: calc(100% - 24px);
     right: 0;
     pointer-events: none;
     opacity: 0;
@@ -435,6 +476,15 @@ li {
     opacity: 1;
     pointer-events: auto;
   }
+  body.mob-menu .main-nav:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 50px;
+    border-bottom: 8px solid white;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+  }
   body.menu-bot-pos .main-nav {
     position: fixed;
     top: auto;
@@ -442,6 +492,15 @@ li {
     z-index: 99999;
     -webkit-box-shadow: 0 0 50px #8e8e8e;
             box-shadow: 0 0 50px #8e8e8e;
+  }
+  body.menu-bot-pos .main-nav:before {
+    top: auto;
+    bottom: -8px;
+    right: 32px;
+    border-bottom: 0;
+    border-top: 8px solid white;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
   }
 }
 
@@ -479,7 +538,6 @@ li {
   border-radius: 5px;
   cursor: pointer;
   display: none;
-  font-weight: 900;
 }
 
 body.menu-bot-pos .main-nav-trigger {
@@ -1126,25 +1184,6 @@ body.menu-bot-pos .main-nav-trigger {
 
 .btn-link:hover, button:hover[type=submit] {
   background-color: #1679ae;
-}
-
-.ico-fwd {
-  position: relative;
-  padding-right: 32px !important;
-}
-
-.ico-fwd:after {
-  content: '';
-  background-image: url(../images/icons/ico-fwd.png);
-  background-repeat: no-repeat;
-  background-size: 16px auto;
-  background-position: center center;
-  height: 100%;
-  width: 32px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: .8;
 }
 
 .course-item-content {

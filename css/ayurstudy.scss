@@ -81,6 +81,40 @@ li {
     margin-bottom: 12px;
     }
 
+[class*="ico-"] {
+	position: relative;
+	padding-left: 32px!important;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0; top: 0;
+		display: inline-block;
+		width: 32px;
+		height: 100%;
+		background-size: 16px auto;
+		background-position: center center;
+		background-repeat: no-repeat;
+		}
+	}
+
+.ico-call:before {
+	background-image: url(../images/icons/ico-call.png);
+	}
+.ico-msg:before {
+	background-image: url(../images/icons/ico-msg.png);
+	}
+.ico-menu:before {
+	background-image: url(../images/icons/ico-menu.png);
+	}
+.ico-close:before {
+	background-image: url(../images/icons/ico-close.png);
+	}
+.ico-fwd:after {
+    background-image: url(../images/icons/ico-fwd.png);left: auto; right: 0;
+    opacity: .8;
+    }
+
 .main-header {
     color: white;
     
@@ -156,7 +190,7 @@ li {
 @media (max-width: 1200px) {
     .main-nav {
         position: absolute;
-        top: 100%;
+        top: calc(100% - 24px);
         right: 0;
         pointer-events: none;
         opacity: 0;
@@ -178,12 +212,30 @@ li {
         animation: fade-in-right .3s forwards;
         opacity: 1;
         pointer-events: auto;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -8px; right: 50px;
+            border-bottom: 8px solid white;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            }
         }
     body.menu-bot-pos .main-nav {
         position: fixed;
         top: auto; bottom: 60px;
         z-index: 99999;
         box-shadow: 0 0 50px rgb(142, 142, 142);
+
+        &:before {
+            top: auto; 
+            bottom: -8px; right: 32px;
+            border-bottom: 0;
+            border-top: 8px solid white;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            }
         }
     }
 
@@ -206,7 +258,6 @@ li {
 	border-radius: 5px;
 	cursor: pointer;
 	display: none;
-    font-weight: 900;
 	}
 body.menu-bot-pos .main-nav-trigger {
 	position: fixed;
@@ -863,24 +914,6 @@ body.menu-bot-pos .main-nav-trigger {
 
     &:hover {
         background-color: rgb(22, 121, 174);
-        }
-    }
-
-.ico-fwd {
-    position: relative;
-    padding-right: 32px!important;
-
-    &:after {
-        content: '';
-        background-image: url(../images/icons/ico-fwd.png);
-        background-repeat: no-repeat;
-        background-size: 16px auto;
-        background-position: center center;
-        height: 100%;
-        width: 32px;
-        position: absolute;
-        top: 0; right: 0;
-        opacity: .8;
         }
     }
 
