@@ -203,8 +203,7 @@ li {
         color: rgba(58, 133, 58, 0.905);
         z-index: 9999;
         border-radius: 5px;
-        border: 3px solid white;
-        box-shadow: inset 0 0 0 1px rgba(34, 34, 34, 0.347);
+        box-shadow: 0 0 50px rgb(142, 142, 142);
 
         a + a {
             margin-top: 24px;
@@ -228,7 +227,6 @@ li {
         position: fixed;
         top: auto; bottom: 60px;
         z-index: 99999;
-        box-shadow: 0 0 50px rgb(142, 142, 142);
 
         &:before {
             top: auto; 
