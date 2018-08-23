@@ -283,21 +283,20 @@ body.menu-bot-pos .main-nav-trigger {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    font-size: .9rem;
+    font-size: .8rem;
+    padding: 5px 10px;
     
     border-radius: 5px;
     background-color: rgba(93, 162, 199, 0.531);
-
-    > * {
-        padding: 5px 10px;
-        }
     }
 .quick-contact-title {
-    width: 100%;
+    width: calc(100% + 20px);
     font-size: .68rem;
     letter-spacing: 2px;
     background-color: #fff;
     color: #222;
+    margin: -5px -10px 4px;
+    padding: 5px 10px;
     }
     @media (max-width: 516px) {
         .quick-contact {
