@@ -945,6 +945,19 @@ body.menu-bot-pos .main-nav-trigger {
         }
     }
 
+.course-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+
+    li {
+        padding: 5px 12px;
+        border-radius: 5px;
+        background-color: rgba(148, 155, 255, 0.123);
+        display: inline-block;
+        }
+    }
+
 .location-tile {
     background-color: hsla(0,0%,0%,.5);
     color: white;
