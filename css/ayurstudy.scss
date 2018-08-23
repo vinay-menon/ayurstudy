@@ -31,6 +31,8 @@ body {
     
     color: #666;
     position: relative;
+
+    max-width: 100vw;
     overflow-x: hidden;
 	}
 
@@ -158,24 +160,23 @@ li {
         top: 100%;
         right: 0;
         transform: translateX(100%);
+        transition: .3s;
         // height: auto;
         flex-direction: column;
         padding: 24px;
         background-color: #fff;
         color: rgba(58, 133, 58, 0.905);
         z-index: 9999;
-        display: none;
+        border-radius: 5px;
+        border: 3px solid white;
+        box-shadow: inset 0 0 0 1px rgba(34, 34, 34, 0.347);
 
         a {
             margin-bottom: 24px;
             }
         }
     body.mob-menu .main-nav {
-        display: flex;
         transform: translateX(0);
-        border-radius: 5px;
-        border: 3px solid white;
-        box-shadow: inset 0 0 0 1px rgba(34, 34, 34, 0.347);
         }
     }
 
