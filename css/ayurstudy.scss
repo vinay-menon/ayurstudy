@@ -1125,6 +1125,45 @@ button[type=submit] {
     height: 400px;
     } 
 
+.add-con-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    h3 {
+        width: 100%;    
+        }
+    }
+    @media (max-width: 463px) {
+        .add-con-content {
+            flex-direction: column;
+            }
+        }
+
+.add-con-item {
+    > p {
+        padding: 12px;
+        padding-right: 24px;
+        background-color: rgb(255, 252, 250);
+        border-radius: 10px;
+        border: 1px solid rgba(34, 34, 34, 0.185);
+
+        + p {
+            margin-top: 12px;
+            }
+        }
+    + .add-con-item {
+        margin-left: 12px;
+        }
+    }
+    @media (max-width: 463px) {
+        .add-con-item + .add-con-item {
+            margin-left: 0;
+            margin-top: 12px;
+            }
+        }
+
+
+
 .contact-iframe {  
     min-height: 548px; 
     margin: auto;
