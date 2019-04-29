@@ -13,15 +13,8 @@
 	}
 
 body {
-    background-color: hsl(180,0%,26%);
-    background-color: hsla(200,30%,26%,1);
-	// background-image:
-	// 	linear-gradient(
-    //         hsla(150,0%,26%,0),
-	// 		rgba(78, 206, 93, 0.245),
-	// 		hsla(200,30%,26%,.8) 600px,
-	// 		hsla(200,30%,26%,1) 700px
-	// 		);
+    // background-color: hsl(180,0%,26%);
+    background-color: rgb(177, 190, 173);
     background-size: auto;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -37,12 +30,20 @@ body {
 @import "components/_bg-slideshow";
 
 .main-gradient {
+	// background-image:
+	// 	linear-gradient(
+    //         hsla(150,0%,26%,0),
+	// 		rgba(78, 206, 93, 0.245),
+	// 		hsla(200,30%,26%,.8) 90%,
+	// 		hsla(200,30%,26%,1) 100%
+	// 		);
 	background-image:
 		linear-gradient(
-            hsla(150,0%,26%,0),
-			rgba(78, 206, 93, 0.245),
-			hsla(200,30%,26%,.8) 90%,
-			hsla(200,30%,26%,1) 100%
+			rgba(0, 0, 0, 0.74), 
+			rgba(78, 206, 93, 0.39), 
+			rgba(45, 45, 42, 0.62) 80%, 
+			#f2ffb84a, 
+			#f2ffb8 100%
 			);
 	// background-image:
 	// 	linear-gradient(
@@ -117,10 +118,6 @@ li {
 
 .main-header {
     color: white;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 128px;
 	}
     @media (max-width: 1164px) {
@@ -132,24 +129,44 @@ li {
     background-size: cover;
     margin-bottom: 0;
     padding-bottom: 64px;
+	display: flex;
+	flex-wrap: wrap;
+
+		.page-heading {
+			color: rgb(85, 77, 114);
+			}
 
     &.--courses {
-        background-image: url(../images/biel-morro-250579-unsplash.jpg);
+        background-image: url(../images/courses_bg.jpg);
+
+		.page-heading {
+			color: rgb(42, 32, 78);
+			}
         }
     &.--opportunities {
-        background-image: url(../images/paul-gilmore-134605-unsplash.jpg);
+        background-image: url(../images/opportunities_bg.jpg);
         }
     &.--about {
-        background-image: url(../images/steve-huntington-374991-unsplash.jpg);
+        background-image: url(../images/about_bg.jpg);
         }
     &.--contact {
-        background-image: url(../images/niklas-tidbury-327468-unsplash.jpg);
+        background-image: url(../images/contact_bg.jpg);
+        }
+    &.--certificates { 
+        background-image: url(../images/certificates_bg.jpg);
         }
     }
 
+.header-intro {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1600px;
+	margin: auto;
+	}	
+
 .main-top-bar {
     width: 100%;
-    background-color: rgba(46, 72, 86, 0.531);
+    background-color: rgba(72, 69, 236, 0.384);
     margin-bottom: 64px;
     
     display: flex;
@@ -172,7 +189,6 @@ li {
 .main-nav a {
     width: 150px;
     text-align: center;
-    
     background-image:
         linear-gradient(
             transparent calc(100% - 2px),
@@ -381,7 +397,7 @@ body.menu-bot-pos .main-nav-trigger {
 //     }
 
 .intro-text {
-    width: calc(100% - 364px);
+    width: calc(100% - 400px);
     padding: 0 30px;
     display: flex;
     flex-direction: column;
@@ -528,25 +544,41 @@ body.menu-bot-pos .main-nav-trigger {
     max-width: calc(33.33% - 30px);
     flex-grow: 1;
     display: flex;
-    background-image: none!important;
+    // background-image: none!important;
     position: relative;
     padding: 20px;
     
-    color: white;
+    color: rgb(65, 65, 65);
     border: 1px solid #999;
     border-radius: 5px;
+	background-color: white;
+	background-image: 
+		linear-gradient(
+			rgb(63, 166, 192),
+			rgb(173, 62, 167),
+			rgb(192, 192, 58)
+			);
+    background-size: 6px 100%;
+    background-position: top left;
+	background-repeat: no-repeat;
     
-    background-image: 
-        linear-gradient(
-            hsla(3,10%,0%,0),
-            hsla(3,10%,0%,.4)
-            ),
-        url(../images/bg_top.jpg);
-    background-size: auto, 100% auto;
-    background-position: 50%;
-    opacity: .8;
+    // background-image: 
+    //     linear-gradient(
+    //         hsla(3,10%,0%,0),
+    //         hsla(3,10%,0%,.4)
+    //         ),
+    //     url(../images/bg_top.jpg);
+    // background-image: 
+    //     linear-gradient(
+    //         rgb(255, 255, 255),
+    //         rgb(255, 255, 255)
+    //         ),
+    //     url(../images/bg_top.jpg);
+    // background-size: auto, 100% auto;
+    // background-position: 50%;
+    // opacity: .8;
     
-    transition: 5s background-size linear, .3s opacity;
+    transition: .3s;
 /*    box-shadow: inset 0 0 50px 10px hsl(33,0%,10%);*/
     }
     @media (max-width: 1164px) {
@@ -560,6 +592,7 @@ body.menu-bot-pos .main-nav-trigger {
         }
 .nav-box_title {
     margin-bottom: 12px;
+	color: rgb(115, 37, 122);
     }
 
 .nav-box-content p {
@@ -606,7 +639,7 @@ body.menu-bot-pos .main-nav-trigger {
     z-index: 2;
     }
 .nav-box:hover {
-    background-size: auto, 110% auto;
+    background-size: 12px 100%;
     opacity: 1;
     }
 .nav-box:before,
@@ -671,20 +704,16 @@ body.menu-bot-pos .main-nav-trigger {
     }
 
 .info-box {
-    max-width: 80%;
+	display: flex;
+
+    max-width: 100%;
     background-color: hsla(0,0%,100%,.9);
-    padding: 30px;
+    padding: 50px 30px;
     margin-left: auto;
     margin-bottom: 32px;
-    background-image: 
-		linear-gradient(
-            rgba(66, 66, 66, 0.456),
-			rgba(78, 206, 93, 0.245),
-			rgba(20, 118, 171, 0.8)
-			),
-        url(../images/ayurveda3.jpg);
+	
     background-size: cover;
-    color: white;
+    color: rgb(73, 73, 73);
 
     min-height: 400px;
     transition: .5s;
@@ -697,11 +726,11 @@ body.menu-bot-pos .main-nav-trigger {
     @media (max-width: 712px) {
         .info-box {
             max-width: 100%;
-            // transform: none;
-
-            // &:nth-child(2) {
-            //     transform: none;
-            //     }
+            }
+        }
+    @media (max-width: 672px) {
+        .info-box {
+			flex-direction: column;
             }
         }
 
@@ -712,28 +741,39 @@ body.menu-bot-pos .main-nav-trigger {
 .info-box:nth-child(2) {
     margin-left: 0;
     margin-right: auto;
-    background-image: 
-		linear-gradient(
-            rgba(66, 66, 66, 0.456),
-			rgba(78, 206, 93, 0.245),
-			rgba(20, 118, 171, 0.8)
-			),
-        url(../images/equipment.jpg);
     }
-.info-box:nth-child(3) {
-    background-image: 
-		linear-gradient(
-            rgba(66, 66, 66, 0.456), 
-			rgba(78, 206, 93, 0.245),
-			rgba(20, 118, 171, 0.8)
-			),
-        url(../images/aky-hero_1.jpg);
-    }
+    @media (max-width: 672px) {
+        .info-box:nth-child(2) {
+			flex-direction: column-reverse;
+            }
+        }
+
+.info-img {
+	width: 40%; 
+	// max-width: 400px;
+
+	img {
+		width: 100%;
+		max-width: 100%;
+		}
+	}
+    @media (max-width: 672px) {
+        .info-img {
+			width: 100%;
+			margin-bottom: 24px;
+            }
+        }
+
 .info-text {
     max-width: calc(50% - 30px);
     margin-left: auto;
+	line-height: 1.7;
+
+	a {
+		font-weight: bold;
+		}
     }
-    @media (max-width: 540px) {
+    @media (max-width: 672px) {
         .info-text {
             max-width: 100%;
             }
@@ -972,11 +1012,18 @@ body.menu-bot-pos .main-nav-trigger {
     padding-left: 0;
     margin-bottom: 24px;
 
+	// OLD DESIGN	
+    // li {
+    //     padding: 5px 12px;
+    //     border-radius: 5px;
+    //     background-color: rgba(148, 155, 255, 0.123);
+    //     display: inline-block;
+    //     }
+
     li {
         padding: 5px 12px;
-        border-radius: 5px;
-        background-color: rgba(148, 155, 255, 0.123);
-        display: inline-block;
+        background-color: rgb(255, 255, 255);
+		border-left: 3px solid rgb(255, 144, 93);
         }
     }
 
@@ -1160,48 +1207,41 @@ button[type=submit] {
     height: 400px;
     } 
 
-.add-con-content {
-    display: flex;
-    flex-wrap: wrap;
-
-    h3 {
-        width: 100%;    
-        }
-    }
-    @media (max-width: 463px) {
-        .add-con-content {
-            flex-direction: column;
-            }
-        }
-
 .add-con-item {
-    > p {
-        padding: 12px;
-        padding-right: 24px;
-        background-color: rgb(255, 252, 250);
-        border-radius: 10px;
-        border: 1px solid rgba(34, 34, 34, 0.185);
+	margin-bottom: 24px;
+	
+	p:first-child {
+		font-weight: bold;
+		}
+	}
 
-        + p {
-            margin-top: 12px;
-            }
-        }
-    + .add-con-item {
-        margin-left: 12px;
-        }
-    }
-    @media (max-width: 463px) {
-        .add-con-item + .add-con-item {
-            margin-left: 0;
-            margin-top: 12px;
-            }
-        }
+// .add-con-item {
+//     > p {
+//         padding: 12px;
+//         padding-right: 24px;
+//         background-color: rgb(255, 252, 250);
+//         border-radius: 10px;
+//         border: 1px solid rgba(34, 34, 34, 0.185);
+
+//         + p {
+//             margin-top: 12px;
+//             }
+//         }
+//     + .add-con-item {
+//         margin-left: 12px;
+//         }
+//     }
+//     @media (max-width: 463px) {
+//         .add-con-item + .add-con-item {
+//             margin-left: 0;
+//             margin-top: 12px;
+//             }
+//         }
 
 
 
 .contact-iframe {  
     min-height: 548px; 
-    margin: auto;
     display: block;
     width: 100%;
     max-width: 600px;
